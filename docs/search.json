@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Julio Trecenti",
+    "section": "",
+    "text": "Hi! My name is Julio Trecenti (aka Data Janitor)\nI’m a Statistician and have PhD at IME-USP, Brazil\n\nExperience\nI do a lot of things!\n\nTech Director at ABJ\nPartner at Terranova Consulting\nTeacher at Curso-R\nAssistant professor at Insper\nPost doctorate researcher at Unifesp\n\n\n\nMain interests\n\nJurimetrics, Web Scraping and Neural Networks\nR enthusiast, but I use Python if needed\nOpen Data activist\n\n\n\nPersonal\n\nI like dogs, piano, and text in bullet points\nI write mostly in Portuguese. Stay tuned for content in English!\nI love my wife, family and friends\n\n\n\nContact\nThe best way to reach me is by email."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "This page will contain links to software I have written (mostly R packages and shiny apps)."
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Content",
+    "section": "",
+    "text": "This page will contain links to blog posts, videos, and other content that I have created. I will also link to content that I have found useful. For now, it’s just a placeholder."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "This page will contain the content of my past and current teaching activities. For now it is just a placeholder."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "This page will contain my publications. For now, please see my Google Scholar page."
+  }
+]

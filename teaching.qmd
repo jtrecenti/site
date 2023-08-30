@@ -2,4 +2,4 @@
 title: "Teaching"
 ---
 
-About this site
+This page will contain the content of my past and current teaching activities. For now it is just a placeholder.
