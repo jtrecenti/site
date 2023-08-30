@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Julio Trecenti"
+  navbar:
+    background: secondary
+    right:
+      - href: index.qmd
+        text: About
+      - software.qmd
+      - content.qmd
+      - teaching.qmd
+      - publications.qmd
+    tools:
+      - icon: twitter
+        href: https://twitter.com/jtrecenti
+      - icon: github
+        href: https://github.com/jtrecenti
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jtrecenti/
+  page-footer:
+    background: secondary
+    left: Made with ❤️ using <a href="https://quarto.org" target="blank">Quarto</a>
+    right: <a href="https://linktr.ee/j.trecenti" target="blank">Linktree</a>
+
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+
+
+

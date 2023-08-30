@@ -1,0 +1,5 @@
+---
+title: "Content"
+---
+
+This page will contain links to blog posts, videos, and other content that I have created. I will also link to content that I have found useful. For now, it's just a placeholder.
