@@ -1,0 +1,98 @@
+---
+title: "Research"
+execute:
+  echo: false
+  warning: false
+---
+
+Most of my work involves applied research projects. However, I also have some papers with great researchers that I had the privilege to work with.
+
+**Main links**: [Google Scholar](https://scholar.google.com/citations?user=L_UvhCkAAAAJ&hl=pt-BR&oi=ao){target="_blank"} | [Lattes](http://lattes.cnpq.br/1626039019509210){target="_blank"} | [ORCID](https://orcid.org/0000-0002-1680-6389){target="_blank"}
+
+## Publications
+
+```{r}
+googlesheets4::gs4_auth("julio.trecenti@gmail.com")
+link <- "https://docs.google.com/spreadsheets/d/1l5TJKgXJ7v1EElaxlp3k-ZyEUDOM_0eSAp04O7LFh8E/edit#gid=0"
+dados <- googlesheets4::read_sheet(link, "research")
+```
+
+```{r}
+#| results: "asis"
+template <- stringr::str_c(c(
+  "::: {{.card style='padding:10px;margin-bottom:10px'}}\n\n",
+  "\n\n**Title:** {title}\n\n",
+  "**Type:** {type}\n\n",
+  "**Description:** <details><summary>Show</summary>{description}</details>\n\n",
+  "**Authors:** {authors}\n\n",
+  "**Language:** {lang}\n\n",
+  "**Institution:** {institution}\n\n",
+  "[**Link**]({link}){{target='_blank'}}\n\n",
+  ":::\n\n"
+), collapse = "")
+
+dados |>
+  dplyr::filter(type %in% c("working paper", "published paper")) |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::walk(\(x) cat(glue::glue_data(x, template)))
+```
+
+
+## Applied Research
+
+```{r}
+#| results: "asis"
+dados |>
+  dplyr::filter(type == "applied research") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::walk(\(x) cat(glue::glue_data(x, template)))
+```
+
+## Master's/PhD Thesis
+
+```{r}
+#| results: "asis"
+dados |>
+  dplyr::filter(type %in% c("PhD thesis", "Master's thesis")) |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::walk(\(x) cat(glue::glue_data(x, template)))
+```
+
+
+```{python}
+#| eval: false
+
+import yaml
+import sys
+
+# list all files in a directory
+import os
+import pandas as pd
+
+dir = "../../abj/site/content/pesquisas/"
+
+files = os.listdir(dir)
+files = [os.path.join(dir, file) for file in files]
+files = [f for f in files if not 'maiores' in f ]
+
+lista = []
+
+for file in files:
+  with open(file, "r") as f:
+    front_matter = next(yaml.load_all(f, Loader=yaml.FullLoader))
+    lista.append(front_matter)
+
+da = pd.DataFrame(lista)
+
+```
+
+
+```{r}
+#| eval: false
+library(reticulate)
+googlesheets4::sheet_write(py$da, link)
+```
+

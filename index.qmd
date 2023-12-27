@@ -27,17 +27,17 @@ I'm a Statistician and have PhD at [IME-USP](https://www.ime.usp.br/pos-estatist
 
 I do a lot of things!
 
+- Assistant professor at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
+- Post doctorate researcher at [Unifesp](https://ceoe.org.br/){target="_blank"}
 - Tech Director at [ABJ](https://abj.org.br){target="_blank"}
 - Partner at [Terranova Consulting](htps://trnv.com.br){target="_blank"}
 - Teacher at [Curso-R](https://curso-r.com){target="_blank"}
-- Assistant professor at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
-- Post doctorate researcher at [Unifesp](https://ceoe.org.br/){target="_blank"}
 
 #### Main interests
 
 - Jurimetrics, Web Scraping and Neural Networks
-- R enthusiast, but I use Python if needed
-- Open Data activist
+- R programming language (I use Python if needed)
+- Open Data and Open Science
 
 #### Personal
 
