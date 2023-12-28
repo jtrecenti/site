@@ -1,5 +1,46 @@
 ---
 title: "Software"
+execute:
+  echo: false
+  warning: false
+listing:
+  filter-ui: true
+  id: software
+  template: software.ejs
+  contents: software.yaml
+  categories: cloud
+  page-size: 1000
 ---
 
-This page will contain links to software I have written (mostly R packages and shiny apps).
+
+I have a lot of packages, but most of them are only drafts. Use the menu to filter the packages by category or use the search bar.
+
+**Main GitHub links**: [Personal](https://github.com/jtrecenti){target="_blank"} | [ABJ](https://github.com/abjur){target="_blank"} | [Curso-R](https://github.com/curso-r){target="_blank"} | [Terranova](https://github.com/terranova){target="_blank"} | [decryptr](https://github.com/decryptr){target="_blank"}
+
+```{=html}
+<style>
+  .card-body > p {
+    margin-bottom: 0px;
+  }
+
+  .bslib-gap-spacing {
+    gap: 0px;
+  }
+
+  details {
+    margin-bottom: 0px;
+  }
+
+  .hide-img {
+    display: none;
+  }
+</style>
+```
+
+::: {#software}
+
+:::
+
+```{r}
+bslib::card()
+```

@@ -11,6 +11,16 @@ Most of my work involves applied research projects. However, I also have some pa
 
 ## Publications
 
+```{css}
+.card > p {
+  margin-bottom: 0px;
+}
+
+details {
+  margin-bottom: 0px;
+}
+```
+
 ```{r}
 googlesheets4::gs4_auth("julio.trecenti@gmail.com")
 link <- "https://docs.google.com/spreadsheets/d/1l5TJKgXJ7v1EElaxlp3k-ZyEUDOM_0eSAp04O7LFh8E/edit#gid=0"
@@ -22,6 +32,7 @@ dados <- googlesheets4::read_sheet(link, "research")
 template <- stringr::str_c(c(
   "::: {{.card style='padding:10px;margin-bottom:10px'}}\n\n",
   "\n\n**Title:** {title}\n\n",
+  "**Year:** {year}\n\n",
   "**Type:** {type}\n\n",
   "**Description:** <details><summary>Show</summary>{description}</details>\n\n",
   "**Authors:** {authors}\n\n",
@@ -33,6 +44,7 @@ template <- stringr::str_c(c(
 
 dados |>
   dplyr::filter(type %in% c("working paper", "published paper")) |>
+  dplyr::arrange(desc(year)) |>
   tibble::rowid_to_column() |>
   dplyr::group_split(rowid) |>
   purrr::walk(\(x) cat(glue::glue_data(x, template)))
@@ -45,6 +57,7 @@ dados |>
 #| results: "asis"
 dados |>
   dplyr::filter(type == "applied research") |>
+  dplyr::arrange(desc(year)) |>
   tibble::rowid_to_column() |>
   dplyr::group_split(rowid) |>
   purrr::walk(\(x) cat(glue::glue_data(x, template)))
@@ -56,6 +69,7 @@ dados |>
 #| results: "asis"
 dados |>
   dplyr::filter(type %in% c("PhD thesis", "Master's thesis")) |>
+  dplyr::arrange(desc(year)) |>
   tibble::rowid_to_column() |>
   dplyr::group_split(rowid) |>
   purrr::walk(\(x) cat(glue::glue_data(x, template)))

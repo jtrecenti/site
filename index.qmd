@@ -36,7 +36,7 @@ I do a lot of things!
 #### Main interests
 
 - Jurimetrics, Web Scraping and Neural Networks
-- R programming language (I use Python if needed)
+- R language (I use Python if needed)
 - Open Data and Open Science
 
 #### Personal

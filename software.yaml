@@ -1,0 +1,758 @@
+- title: auth0
+  description: The goal of `{auth0}` is to implement an authentication scheme to Shiny
+    using OAuth Apps through the freemium service [Auth0](https://auth0.com).
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Daniel Falbel, Dean Attali, Jose de Jesus Filho, Caio Lente
+  logo: https://github.com/curso-r/auth0/raw/master/man/figures/logo.png
+  tem_img: show-img
+  institution: Curso-R
+  link: https://github.com/curso-r/auth0
+- title: captcha
+  description: This package is an extensible API to build models and solve Captchas
+    (Completely Automated Public Turing test to tell Computers and Humans Apart). It
+    provides tools to read Captchas, visualize Captchas, annotate Captchas, fit models,
+    and share fitted models.
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Victor Fossaluza
+  logo: https://github.com/decryptr/captcha/raw/master/man/figures/hex_small.png
+  tem_img: show-img
+  institution: IME-USP
+  link: https://github.com/decryptr/captcha
+- title: abjutils
+  description: '`{abjutils}` is a toolkit with some useful functions created by the
+    Brazilian Jurimetrics Association ([Associação Brasileira de Jurimetria](https://abj.org.br/)).
+    Most functions help with identifying lawsuit IDs as specified by the National Justice
+    Council ([Conselho Nacional de Justiça](https://www.cnj.jus.br/programas-e-acoes/numeracao-unica/documentos/)):
+    NNNNNNN-DD.AAAA.J.TR.OOOO. The rest helps with ASCII and other formatting problems.'
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Caio Lente, Katerine Witkoski
+  logo: https://github.com/abjur/abjutils/raw/master/man/figures/logo.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/abjutils
+- title: abjData
+  description: This package contains a set of databases frequently used by ABJ. The
+    data included comes from the Human Development Index of the municipalities, collected
+    from the Human Development Atlas and cartographic databases. The purpose of the
+    package is to make databases available for quick use in other projects and as a
+    resource for the Jurimetrics book.
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Katerine Witkoski
+  logo: https://github.com/abjur/abjData/raw/master/man/figures/logo.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/abjData
+- title: abjMaps
+  description: O objetivo do {abjMaps} é possibilitar a criação de mapas jurimétricos
+    utilizando-se de recursos do pacote sf (contém ferramentas para armazenamento e
+    acesso de características geográficas). Para enriquecer a análise, são incluídos
+    dados relativos aos estados, municípios e comarcas do Brasil. Até o momento, estão
+    implementadas as bases para o TJSP e o TJRS.
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Katerine Witkoski
+  logo: https://github.com/abjur/abjMaps/raw/master/man/figures/logo.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/abjMaps
+- title: munifacil
+  description: O pacote [munifacil](https://curso-r.github.io/munifacil/) tem como objetivo
+    facilitar a união de colunas de nome de município com o respectivo código do IBGE.
+    Isso é útil para posteriormente realizar procedimentos de `join` usando como chave
+    a coluna do código do IBGE (como o `dplyr::left_join()`).
+  categories:
+    - package
+    - status_draft
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Julio Trecenti, Beatriz Milz, Fernando Correa
+  logo: .na.character
+  tem_img: hide-img
+  institution: Curso-R
+  link: https://github.com/curso-r/munifacil
+- title: bnmp
+  description: The goal of bnmp is to download and process data from the ‘Banco Nacional
+    de Monitoramento de Prisões’ (BNMP) of the Brazilian National Council of Justice
+    (CNJ).
+  categories:
+    - package
+    - status_draft
+    - inactive
+  type: package
+  language: en-US
+  active: inactive
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Personal
+  link: https://github.com/jtrecenti/bnmp
+- title: falrec
+  description: O pacote `{falrec}` baixa e atualiza os dados de falências e recuperações
+    disponibilizados pelo [Serasa Experian](https://www.serasaexperian.com.br/amplie-seus-conhecimentos/indicadores-economicos).
+  categories:
+    - package
+    - data
+    - scraper
+    - status_stable
+    - active
+  type: package;data;scraper
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti
+  logo: https://github.com/abjur/falrec/raw/main/man/figures/logo.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/falrec
+- title: obsArb
+  description: Repositório do Observatório da Arbitragem. O Observatório da Arbitragem
+    é um projeto que visa compreender o reflexo do fenômeno jurídico da arbitragem nos
+    tribunais. Em sua primeira fase, o projeto busca compreender o fluxo dos processos
+    de i) anulação de decisão arbitral, ii) cumprimento de sentença / execução, iii)
+    medida cautelar antecedente ao tribunal arbitral iv) ação de instauração da arbitragem
+    v) compromisso arbitral.
+  categories:
+    - report
+    - status_frozen
+    - inactive
+  type: report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/obsArb
+- title: consumidorTJSP
+  description: O objetivo principal da pesquisa é descrever quantitativamente os conflitos
+    relacionados ao Direito do Consumidor no estado de São Paulo.
+  categories:
+    - report
+    - status_frozen
+    - inactive
+  type: report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/consumidorTJSP
+- title: livroR
+  description: Livro sobre programação para ciência de dados em R, da Curso-R
+  categories:
+    - book
+    - status_stable
+    - active
+  type: book
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Athos Damiani, Beatriz Milz, Caio Lente, Daniel Falbel, Fernando Correa,
+    Julio Trecenti, Nicole Luduvice, Tereza Lacerda, William Amorim
+  logo: https://curso-r.com/images/produtos/hex-livro.webp
+  tem_img: show-img
+  institution: Curso-R
+  link: https://livro.curso-r.com/
+- title: ambientalCNJ
+  description: Este repositório contém os dados e as análises utilizadas na pesquisa
+    Corrupção e Lavagem de Dinheiro relacionados a Crimes Ambientais. O estudo completo
+    tem como objetivo identificar e analisar as cadeias de lavagem de bens e capitais
+    relacionadas a crimes ambientais. A pesquisa é baseada na sistematização de informações
+    sobre os atores e processos judiciais envolvidos, examinados sob a perspectiva dos
+    crimes ambientais e da atuação jurisdicional no assunto. Ao combinar os temas de
+    crimes ambientais e lavagem de bens e capitais, será possível estudar as sanções
+    previstas nas leis de combate à lavagem de dinheiro, que frequentemente são mais
+    efetivas do que as sanções previstas nas leis de crimes ambientais. Além disso,
+    serão geradas recomendações sobre o assunto.
+  categories:
+    - report
+    - status_frozen
+    - inactive
+  type: report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/ambientalCNJ
+- title: livro
+  description: Este repositório contém os textos e códigos de um livro “Metodologia
+    de Pesquisa Jurimétrica”. É possível acessar o *website* do livro [aqui](https://livro.abj.org.br)
+    e o PDF do livro [aqui](https://livro.abj.org.br/livro_jurimetria.pdf).
+  categories:
+    - report
+    - book
+    - status_draft
+    - active
+  type: report;book
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Ricardo Feliz, Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/livro
+- title: captchaOracle
+  description: This package implements new dataset, loss and model operations in a `torch`/`luz`
+    framework to address the oracle data structure discussed in [my doctorate thesis](https://jtrecenti.github.io/doutorado)
+    (in Portuguese).
+  categories:
+    - package
+    - status_draft
+    - active
+  type: package
+  language: en-US
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: IME-USP
+  link: https://github.com/jtrecenti/captchaOracle
+- title: captchaDownload
+  description: This package implements a lot of captcha web scrapers
+  categories:
+    - package
+    - scraper
+    - status_draft
+    - active
+  type: package;scraper
+  language: en-US
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: IME-USP
+  link: https://github.com/jtrecenti/captchaDownload
+- title: brasilis
+  description: Aplicativo sobre a atualização da pesquisa por trás do livro "A Cabeça
+    do Brasileiro"
+  categories:
+    - shiny
+    - status_stable
+    - active
+  type: shiny
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Alberto Almeida
+  logo: .na.character
+  tem_img: hide-img
+  institution: Personal
+  link: <https://jtrecenti.shinyapps.io/brasilis/> (private)
+- title: eleicoes2022
+  description: Dados e aplicativo sobre pesquisas eleitorais de 2022
+  categories:
+    - shiny
+    - data
+    - status_draft
+    - active
+  type: shiny;data
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Personal
+  link: https://jtrecenti.shinyapps.io/eleicoes2022/
+- title: obsMC
+  description: O Observatório do Mercado de Capitais é uma iniciativa da Associação
+    Brasileira de Jurimetria (ABJ) e da Associação Brasileira das Companhias Abertas
+    (Abrasca), visando compreender de forma empírica as atividades desempenhadas pela
+    Comissão de Valores Mobiliários (CVM).
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/obsMC/
+- title: obsFase3
+  description: O observatório da insolvência é uma iniciativa do Núcleo de Estudos de
+    Processos de Insolvência - NEPI da PUC-SP e da Associação Brasileira de Jurimetria
+    – ABJ e tem o objetivo de levantar e analisar dados a respeito das empresas em crise
+    que se dirigem ao Poder Judiciário para viabilizar meios de recuperação ou, em último
+    caso, para serem liquidadas.
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/obsFase3/
+- title: obsFase2
+  description: O Observatório da Insolvência é uma iniciativa da Associação Brasileira
+    de Jurimetria (ABJ) em parceria com o Núcleo de Estudos de Processos de Insolvência
+    (NEPI) da PUC-SP. O foco deste projeto é levantar e analisar dados a respeito das
+    empresas em crise que se dirigem ao Poder Judiciário para viabilizar meios de recuperação
+    ou, em último caso, para serem liquidadas.
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/obsFase2/
+- title: obsRJRJ
+  description: O presente relatório analisa os processos de recuperação judicial que
+    tramitam no Rio de Janeiro. A partir do preenchimento manual de formulários de classificação
+    controlados, foi construída uma base de dados completa sobre o processamento da
+    recuperação judicial. A base foi utilizada como insumo para construção dos gráficos
+    e tabelas.
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/obsRJRJ/
+- title: obsRJRS
+  description: O Observatório da Insolvência do Rio Grande do Sul analisa todos os processos
+    de Recuperação Judicial distribuídos no Rio Grande do Sul a partir do ano de 2010.
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/obsRJRS/
+- title: saudeJFCE
+  description: A pesquisa busca compreender a judicialização da saúde no âmbito da Justiça
+    Federal do Ceará. O objetivo é identificar causas, características, atores e efeitos
+    pertinentes, buscando-se testar a viabilidade e a utilidade de modelos de otimização
+    do acesso à justiça e da prestação jurisdicional, como a instalação de vara especializada
+    e a expansão de Núcleos de Apoio Técnico do Poder Judiciário – NATJUS, conforme
+    Resolução 238/2016/CNJ.
+  categories:
+    - shiny
+    - data
+    - site
+    - report
+    - status_stable
+    - active
+  type: shiny;data;site;report
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz
+  logo: https://obs.abj.org.br/images/main.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://abjur.github.io/saudeJFCE/
+- title: bidTrib
+  description: 'Neste projeto, em parceria com o Banco Interamericano de Desenvolvimento
+    (BID), a Associação Brasileira de Jurimetria (ABJ) diagnosticará problemas e proporá
+    melhorias em uma das áreas do sistema tributário brasileiro: o contencioso tributário
+    administrativo. Para tanto, a ABJ conduzirá pesquisa quantitativa e qualitativa
+    sobre o contencioso administrativo.'
+  categories:
+    - shiny
+    - data
+    - report
+    - status_frozen
+    - inactive
+  type: shiny;data;report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Renata Hirota, Ricardo Feliz, Andre Assumpcao
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://abjur.shinyapps.io/bidTrib/
+- title: faxinaJud
+  description: 'A plataforma faxinaJud, vencedor do desafio {inovaCNJ}, foi elaborada
+    para resolver duas dores: i) Inconsistências precisam ser monitoradas continuamente.
+    ii) O trabalho de arrumar dados precisa ser distribuído nos tribunais / unidades
+    judiciárias. Por isso, construímos um dashboard interativo que, além de mostrar
+    as principais inconsistências e comparar o desempenho dos tribunais, permite o envio
+    de tabelas arrumadas para validação do CNJ. A plataforma mostra inconsistências
+    identificadas através de regras e ou modelagem estatística.'
+  categories:
+    - shiny
+    - status_frozen
+    - inactive
+  type: shiny
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Bruno Daleffi, Caio Lente, Andre Assumpcao
+  logo: .na.character
+  tem_img: hide-img
+  institution: Terranova
+  link: <https://abjur.shinyapps.io/inovaCNJ/> (private)
+- title: forosCNJ
+  description: O objetivo do `{forosCNJ}` é disponibilizar bases de dados e documentação
+    do projeto de levantamento das comarcas e códigos do Brasil, considerando o disposto
+    na [Resolução Nº 65/2008 do CNJ](https://atos.cnj.jus.br/atos/detalhar/119), que
+    trata da uniformização do número dos processos nos órgãos do Poder Judiciário e
+    dá outras providências, favorecendo a consulta processual.
+  categories:
+    - package
+    - status_stable
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti, Katerine Witkoski
+  logo: https://github.com/abjur/forosCNJ/blob/master/man/figures/logo.png?raw=true
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/forosCNJ
+- title: goal500
+  description: Esse repositório mostra os gols dos principais artilheiros ainda ativos,
+    com base nas estatísticas disponíveis no Wikipédia.
+  categories:
+    - package
+    - status_draft
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Personal
+  link: https://github.com/jtrecenti/goal500
+- title: tpur
+  description: O objetivo do pacote é oferecer a pesquisadores que queiram se aventurar
+    nos dados do Judiciário brasileiro uma forma mais simples de acessar os códigos
+    de TPUs que precisam ser utilizados para utilizar APIs e solicitar dados via Lei
+    de Acesso à Informação (LAI). Em ambos os casos, o Poder Público exige que os pesquisadores
+    listem os dados processuais por meio dos códigos das classes e assuntos, e não a
+    sua descrição.
+  categories:
+    - package
+    - status_draft
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Fernando Correa, Julio Trecenti, Ricardo Feliz
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/tpur
+- title: concordiaScraper
+  description: '`concordiaScraper` is an R package that allows users to interact with
+    the Itamaraty API for downloading and saving data related to specific cases in different
+    formats. This package includes functions for downloading data from a specified page,
+    downloading specific case data in JSON format, and downloading specific case data
+    in HTML format.'
+  categories:
+    - package
+    - data
+    - scraper
+    - status_frozen
+    - inactive
+  type: package;data;scraper
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/concordiaScraper
+- title: seiScraper
+  description: O objetivo deste pacote é construir um scraper do SEI. Inicialmente nosso
+    objetivo é somente baixar dados para o projeto do Observatório do Mercado de Capitais,
+    mas depois podemos evoluir para ficar mais geral.
+  categories:
+    - package
+    - scraper
+    - status_frozen
+    - inactive
+  type: package;scraper
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Ricardo Feliz
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/seiScraper
+- title: gaaScraper
+  description: O objetivo do pacote `gaaScraper` é facilitar a coleta de dados do site
+    dos GAAs (Grupos de Apoio à Adoção) de todo o Brasil.
+  categories:
+    - package
+    - data
+    - scraper
+    - status_stable
+    - active
+  type: package;data;scraper
+  language: pt-BR
+  active: active
+  status: status_stable
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/gaaScraper
+- title: coresInsper
+  description: Imprime as cores do Insper
+  categories:
+    - package
+    - status_draft
+    - active
+  type: package
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Insper
+  link: https://github.com/padsInsper/coresInsper
+- title: quarto-insper-theme
+  description: Insper template using Quarto reveal.js
+  categories:
+    - theme
+    - status_stable
+    - active
+  type: theme
+  language: en-US
+  active: active
+  status: status_stable
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Insper
+  link: https://github.com/padsInsper/quarto-insper-theme
+- title: datajudApp
+  description: 'O objetivo do datajudApp é mostrar alguns dados do Datajud. Fonte inicial
+    dos dados: https://painel-estatistica.stg.cloud.cnj.jus.br/estatisticas.html'
+  categories:
+    - shiny
+    - status_draft
+    - active
+  type: shiny
+  language: pt-BR
+  active: active
+  status: status_draft
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/datajudApp
+- title: cnc
+  description: Scraper do Cadastro Nacional de Condenações Cíveis por Ato de Improbidade
+    Administrativa e Inelegibilidade - CNJ.
+  categories:
+    - package
+    - data
+    - scraper
+    - status_frozen
+    - inactive
+  type: package;data;scraper
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Fernando Correa, Renata Hirota
+  logo: https://github.com/abjur/cnc/raw/master/man/figures/logo.png
+  tem_img: show-img
+  institution: ABJ
+  link: https://github.com/abjur/cnc
+- title: obsTemplate
+  description: Template de `{pkgdown}` para usar em todos os Observatórios.
+  categories:
+    - package
+    - status_frozen
+    - inactive
+  type: package
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/obsTemplate
+- title: juria
+  description: Chatbot da terranova usando GPT-3.5-Turbo
+  categories:
+    - shiny
+    - status_frozen
+    - inactive
+  type: shiny
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Bruno Daleffi
+  logo: .na.character
+  tem_img: hide-img
+  institution: Terranova
+  link: https://trnv.shinyapps.io/juria/
+- title: nproc
+  description: Aplicativo que extrai informações de números de processos no formato
+    CNJ
+  categories:
+    - shiny
+    - status_frozen
+    - inactive
+  type: shiny
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Terranova
+  link: https://trnv.shinyapps.io/nproc/
+- title: bltm
+  description: 'The goal of bltm is to fit Bayesian Latent Threshold Models using R.
+    The model in the AR(1) form is defined by these equations:'
+  categories:
+    - package
+    - status_frozen
+    - inactive
+  type: package
+  language: en-US
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti, Fernando Tassinari
+  logo: https://curso-r.com/images/produtos/bltm.webp
+  tem_img: show-img
+  institution: Curso-R
+  link: https://github.com/curso-r/bltm
+- title: ibdp
+  description: Materiais da apresentação no Congresso do IBDP.
+  categories:
+    - report
+    - status_frozen
+    - inactive
+  type: report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/ibdp
+- title: feminicidio
+  description: Dados sobre processos relacionados a feminicídio no TJSP
+  categories:
+    - report
+    - status_frozen
+    - inactive
+  type: report
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: ABJ
+  link: https://github.com/abjur/feminicidio
+- title: teses.usp
+  description: Web scraper teses USP
+  categories:
+    - package
+    - scraper
+    - status_frozen
+    - inactive
+  type: package;scraper
+  language: pt-BR
+  active: inactive
+  status: status_frozen
+  authors: Julio Trecenti
+  logo: .na.character
+  tem_img: hide-img
+  institution: Personal
+  link: https://github.com/jtrecenti/teses.usp
