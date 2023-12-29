@@ -14,8 +14,6 @@ website:
       - teaching.qmd
       - research.qmd
     tools:
-      - icon: twitter
-        href: https://twitter.com/jtrecenti
       - icon: github
         href: https://github.com/jtrecenti
       - icon: linkedin
