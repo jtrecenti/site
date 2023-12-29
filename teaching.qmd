@@ -5,7 +5,9 @@ execute:
   warning: false
 ---
 
-This page contains links to the material I use in my classes at Curso-R, ABJ, PUC-SP (which I do not work anymore), and Insper (only courses that involves public materials). This list includes material from classes that I've participated as main instructor, teaching assistant, or guest lecturer. All of them are in Portuguese.
+This page contains links to the material I use in my classes at Curso-R, ABJ, PUC-SP (which I do not work anymore), and Insper (only courses that involves public materials).
+
+This list includes material from classes that I've participated as main instructor or teaching assistant. All of them are in Portuguese.
 
 ```{r}
 googlesheets4::gs4_auth("julio.trecenti@gmail.com")
