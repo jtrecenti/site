@@ -48,6 +48,8 @@ card_list <- dados |>
     )
   ))
 
-cat(as.character(card_list[[1]]))
+bslib::layout_column_wrap(1/4, !!!card_list)
 
-as.character(bslib::layout_column_wrap(1/4, !!!card_list))
+#cat(as.character(card_list[[1]]))
+
+#as.character(bslib::layout_column_wrap(1/4, !!!card_list))

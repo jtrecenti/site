@@ -1,5 +1,137 @@
 ---
 title: "Teaching"
+execute:
+  echo: false
+  warning: false
 ---
 
-This page will contain the content of my past and current teaching activities. For now it is just a placeholder.
+This page contains links to the material I use in my classes at Curso-R, ABJ, PUC-SP (which I do not work anymore), and Insper (only courses that involves public materials). This list includes material from classes that I've participated as main instructor, teaching assistant, or guest lecturer. All of them are in Portuguese.
+
+```{r}
+googlesheets4::gs4_auth("julio.trecenti@gmail.com")
+link <- "https://docs.google.com/spreadsheets/d/1l5TJKgXJ7v1EElaxlp3k-ZyEUDOM_0eSAp04O7LFh8E/edit#gid=0"
+dados <- googlesheets4::read_sheet(link, "teaching")
+```
+
+
+```{=html}
+<style>
+  .card-body > p {
+    margin-bottom: 0px;
+  }
+
+  .bslib-gap-spacing {
+    gap: 0px;
+  }
+
+  details {
+    margin-bottom: 0px;
+  }
+
+  .hide-img {
+    display: none;
+  }
+</style>
+```
+
+```{r}
+
+template <- stringr::str_c(c(
+  "\n\n**Name:** {title}\n\n",
+  "**Description:** <details><summary>Show</summary>{description}</details>\n\n",
+  "**Institution:** {institution}\n\n",
+  "**Classes:** \n- {links_li}\n\n"
+), collapse = "")
+
+monta_card <- function(x) {
+  links_c <- stringr::str_split(x$links, ', ')[[1]]
+  links_nm <- basename(stringr::str_split(x$links, ', ')[[1]])
+  links_fmt <- stringr::str_glue("<a href=\"{links_c}\" target=\"_blank\">{links_nm}</a>")
+  links_li <- paste(links_fmt, collapse = "\n- ")
+  x$links_li <- links_li
+  bslib::card(
+    shiny::markdown(
+      glue::glue_data(x, template), extensions = TRUE
+    ), fill = TRUE
+  )
+}
+
+```
+
+## Current courses
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "current") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
+## Past Courses
+
+### Insper
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "past", institution == "Insper") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
+
+### Curso-R
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "past", institution == "Curso-R") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
+### ABJ
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "past", institution == "ABJ") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
+### IME-USP
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "past", institution == "IME-USP") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
+
+
+### PUC-SP
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(status == "past", institution == "PUC-SP") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(1/2, !!!card_list)
+```
+
