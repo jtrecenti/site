@@ -1,0 +1,108 @@
+---
+title: "Curriculum Vitae"
+execute:
+  echo: false
+  warning: false
+format: html
+toc: false
+---
+
+This page contains my CV, Mini-CV and picture for easy access.
+
+```{r}
+googlesheets4::gs4_auth("julio.trecenti@gmail.com")
+link <- "https://docs.google.com/spreadsheets/d/1l5TJKgXJ7v1EElaxlp3k-ZyEUDOM_0eSAp04O7LFh8E/edit#gid=0"
+dados <- googlesheets4::read_sheet(link, "cv")
+```
+
+
+```{=html}
+<style>
+  .card-body > p {
+    margin-bottom: 0px;
+  }
+
+  .bslib-gap-spacing {
+    gap: 0px;
+  }
+
+  details {
+    margin-bottom: 0px;
+  }
+
+  .hide-img {
+    display: none;
+  }
+
+  h2,h1,p {
+    text-align: center;
+  }
+
+</style>
+```
+
+```{r}
+
+html_code <- '<div class="sourceCode" id="cb{language}"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb{language}-1"><a href="http://localhost:4017/cv.html#cb{language}-1" aria-hidden="true" tabindex="-1"></a>{stringr::str_wrap(mini_cv, 40)}</span></code></pre></div>'
+
+template <- stringr::str_c(c(
+  "\n\n**Language:** {language}\n\n",
+  "**Type:** {type}\n\n",
+  "**Mini CV:** \n\n"
+), collapse = "")
+
+monta_card <- function(x) {
+  html_code <- glue::glue_data(x, html_code)
+  bslib::card(
+    shiny::markdown(
+      glue::glue_data(x, template), extensions = TRUE
+    ),
+    shiny::HTML(html_code)
+  )
+}
+
+```
+
+
+
+## Mini-CV
+
+```{r}
+#| results: asis
+card_list <- dados |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+x <- bslib::layout_column_wrap(width = 1/2, !!!card_list) |>
+  as.character() |>
+  stringr::str_remove_all("  ")
+cat(x)
+```
+
+## Picture
+
+Here is a picture to use in events.
+
+::: {.text-center}
+
+[![](profile_cv.jpg){width=30%}](./profile_cv.jpg){target="_blank"}
+
+:::
+
+
+## Full CV
+
+For now, my CV is simply my [LinkedIn profile](https://www.linkedin.com/in/jtrecenti/).
+
+::: {.text-center}
+
+<button type="button" class="btn btn-secondary btn-lg"><a href='./cv_linkedin.pdf'>Download CV</a></button>
+
+:::
+
+<br/>
+
+```{r}
+bslib::card()
+```

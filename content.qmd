@@ -1,5 +1,110 @@
 ---
 title: "Content"
+execute:
+  echo: false
+  warning: false
 ---
 
-This page will contain links to blog posts, videos, and other content that I have created. I will also link to content that I have found useful. For now, it's just a placeholder.
+This page contains my favorite blog posts, videos and slides. In each section, I also add a list of all the content that I have created. Most of them are in Portuguese.
+
+```{r}
+googlesheets4::gs4_auth("julio.trecenti@gmail.com")
+link <- "https://docs.google.com/spreadsheets/d/1l5TJKgXJ7v1EElaxlp3k-ZyEUDOM_0eSAp04O7LFh8E/edit#gid=0"
+dados <- googlesheets4::read_sheet(link, "content")
+```
+
+
+```{=html}
+<style>
+  .card-body > p {
+    margin-bottom: 0px;
+  }
+
+  .bslib-gap-spacing {
+    gap: 0px;
+  }
+
+  details {
+    margin-bottom: 0px;
+  }
+
+  .hide-img {
+    display: none;
+  }
+</style>
+```
+
+```{r}
+
+template <- stringr::str_c(c(
+  "\n\n**Name:** {title}\n\n",
+  "**Description:** <details><summary>Show</summary>{description}</details>\n\n",
+  "**Language:** {language}\n\n",
+  "{links_li}\n\n"
+), collapse = "")
+
+monta_card <- function(x) {
+  links_c <- stringr::str_split(x$link, ', ')[[1]]
+  links_nm <- basename(stringr::str_split(x$link, ', ')[[1]])
+  links_fmt <- stringr::str_glue("<a href=\"{links_c}\" target=\"_blank\">Link</a>")
+  links_li <- paste(links_fmt, collapse = "\n- ")
+  x$links_li <- links_li
+
+  if (x$type == "featured") {
+    bslib::card(
+      shiny::img(src = x$thumb, style = "position: absolute;right: 0px; top: 0px; width:160px; opacity: 0.2;"),
+      fill = TRUE,
+      shiny::markdown(
+        glue::glue_data(x, template), extensions = TRUE
+      )
+    )
+  } else {
+    bslib::card(
+      fill = TRUE,
+      shiny::markdown(
+        glue::glue_data(x, template), extensions = TRUE
+      ),
+      style = "background-color: #d8d9da;"
+    )
+  }
+
+}
+
+```
+
+## Videos
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(section == "videos") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(width = 1/2, !!!card_list)
+```
+
+## Blogs
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(section == "blog") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(width = 1/2, !!!card_list)
+```
+
+## Slides
+
+```{r}
+card_list <- dados |>
+  dplyr::filter(section == "slides") |>
+  tibble::rowid_to_column() |>
+  dplyr::group_split(rowid) |>
+  purrr::map(monta_card)
+
+bslib::layout_column_wrap(width = 1/2, !!!card_list)
+```
+

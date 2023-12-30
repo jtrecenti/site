@@ -13,6 +13,8 @@ website:
       - content.qmd
       - teaching.qmd
       - research.qmd
+      - href: cv.qmd
+        text: CV
     tools:
       - icon: github
         href: https://github.com/jtrecenti
