@@ -39,6 +39,7 @@ dados <- googlesheets4::read_sheet(link, "content")
 template <- stringr::str_c(c(
   "\n\n**Name:** {title}\n\n",
   "**Description:** <details><summary>Show</summary>{description}</details>\n\n",
+  "**Year:** {year}\n\n",
   "**Language:** {language}\n\n",
   "{links_li}\n\n"
 ), collapse = "")

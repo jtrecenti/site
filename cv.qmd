@@ -43,12 +43,13 @@ dados <- googlesheets4::read_sheet(link, "cv")
 
 ```{r}
 
-html_code <- '<div class="sourceCode" id="cb{language}"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb{language}-1"><a href="http://localhost:4017/cv.html#cb{language}-1" aria-hidden="true" tabindex="-1"></a>{stringr::str_wrap(mini_cv, 40)}</span></code></pre></div>'
+html_code <- '<div class="sourceCode" id="cb{language}"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb{language}-1"><a href="http://localhost:4017/cv.html#cb{language}-1" aria-hidden="true" tabindex="-1"></a>{mini_cv}</span></code></pre></div>'
 
 template <- stringr::str_c(c(
   "\n\n**Language:** {language}\n\n",
   "**Type:** {type}\n\n",
-  "**Mini CV:** \n\n"
+  "**Mini CV:**\n\n\n<div style='height:200px;margin-top:20px;margin-bottom:20px;'>{mini_cv}</div>\n\n\n",
+  "**Copy**:\n\n"
 ), collapse = "")
 
 monta_card <- function(x) {
