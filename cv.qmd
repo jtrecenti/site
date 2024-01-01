@@ -48,7 +48,7 @@ html_code <- '<div class="sourceCode" id="cb{language}"><pre class="sourceCode m
 template <- stringr::str_c(c(
   "\n\n**Language:** {language}\n\n",
   "**Type:** {type}\n\n",
-  "**Mini CV:**\n\n\n<div style='height:230px;margin-top:20px;margin-bottom:20px;'>{mini_cv}</div>\n\n\n",
+  "**Mini CV:**\n\n\n<div style='height:240px;margin-top:20px;margin-bottom:20px;'>{mini_cv}</div>\n\n\n",
   "**Copy**:\n\n"
 ), collapse = "")
 
