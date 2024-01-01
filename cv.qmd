@@ -48,7 +48,7 @@ html_code <- '<div class="sourceCode" id="cb{language}"><pre class="sourceCode m
 template <- stringr::str_c(c(
   "\n\n**Language:** {language}\n\n",
   "**Type:** {type}\n\n",
-  "**Mini CV:**\n\n\n<div style='height:200px;margin-top:20px;margin-bottom:20px;'>{mini_cv}</div>\n\n\n",
+  "**Mini CV:**\n\n\n<div style='height:230px;margin-top:20px;margin-bottom:20px;'>{mini_cv}</div>\n\n\n",
   "**Copy**:\n\n"
 ), collapse = "")
 
@@ -87,7 +87,7 @@ Here is a picture to use in events.
 
 ::: {.text-center}
 
-[![](profile_cv.jpg){width=30%}](./profile_cv.jpg){target="_blank"}
+[![](profile_cv.jpg){width=40%}](./profile_cv.jpg){target="_blank"}
 
 :::
 

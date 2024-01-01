@@ -18,3 +18,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 991.98px) {
+  div.quarto-about-trestles .about-entity .about-link {
+    font-size: 0.8em;
+  }
+}

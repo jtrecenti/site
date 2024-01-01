@@ -9,14 +9,19 @@ about:
       target: _blank
     - icon: github
       href: https://github.com/jtrecenti
+      target: _blank
     - icon: linkedin
       href: https://www.linkedin.com/in/jtrecenti/
+      target: _blank
     - icon: instagram
       href: https://www.instagram.com/faxineirodedados/
+      target: _blank
     - icon: envelope
       href: mailto:julio.trecenti@gmail.com
+      target: _blank
     - icon: tree-fill
       href: https://linktr.ee/j.trecenti
+      target: _blank
 ---
 
 Hi! My name is **Julio Trecenti** (aka [Data Janitor](https://www.instagram.com/faxineirodedados/))
