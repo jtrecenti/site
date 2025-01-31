@@ -32,7 +32,7 @@ I'm a Statistician with PhD's at [IME-USP](https://www.ime.usp.br/pos-estatistic
 
 I do a lot of things!
 
-- Assistant professor at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
+- Part time professor at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
 - Postdoctoral researcher at [Unifesp](https://ceoe.org.br/){target="_blank"}
 - Tech Director at [ABJ](https://abj.org.br){target="_blank"}
 - Partner at [Terranova Consulting](htps://trnv.com.br){target="_blank"}
