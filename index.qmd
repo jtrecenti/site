@@ -4,9 +4,6 @@ image: profile.png
 about:
   template: trestles
   links:
-    - icon: twitter-x
-      href: https://x.com/jtrecenti
-      target: _blank
     - icon: github
       href: https://github.com/jtrecenti
       target: _blank
@@ -14,7 +11,7 @@ about:
       href: https://www.linkedin.com/in/jtrecenti/
       target: _blank
     - icon: instagram
-      href: https://www.instagram.com/faxineirodedados/
+      href: https://www.instagram.com/julio.trecenti/
       target: _blank
     - icon: envelope
       href: mailto:julio.trecenti@gmail.com
@@ -24,7 +21,7 @@ about:
       target: _blank
 ---
 
-Hi! My name is **Julio Trecenti** (aka [Data Janitor](https://www.instagram.com/faxineirodedados/))
+Hi! My name is **Julio Trecenti** (formerly known as Data Janitor)
 
 I'm a Statistician with PhD's at [IME-USP](https://www.ime.usp.br/pos-estatistica/){target="_blank"}, Brazil
 
@@ -32,21 +29,21 @@ I'm a Statistician with PhD's at [IME-USP](https://www.ime.usp.br/pos-estatistic
 
 I do a lot of things!
 
-- Part time professor at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
+- Data science teacher and researcher at [Insper](https://www.insper.edu.br/pos-graduacao/programas-avancados/data-science-e-decisao/){target="_blank"}
 - Researcher at [Unifesp](https://ceoe.org.br/){target="_blank"}
 - Tech Director at [ABJ](https://abj.org.br){target="_blank"}
 - Partner at [Terranova Consulting](htps://trnv.com.br){target="_blank"}
-- Teacher at [Curso-R](https://curso-r.com){target="_blank"}
+- Partner at [Curso-R](https://curso-r.com){target="_blank"}
 
 #### Main interests
 
-- Jurimetrics, Web Scraping and Neural Networks
-- R language (I use Python if needed)
+- Jurimetrics, Web Scraping, Neural Networks/LLMs
+- Expert in R, vibe coder in Python
 - Open Data and Open Science
+- Shiny apps, automation, GitHub
 
 #### Personal
 
 - I like dogs, piano, and text in bullet points
 - I write mostly in Portuguese. Stay tuned for content in English!
 - I love my [wife](https://beamilz.com){target="_blank"}, family and friends
-
