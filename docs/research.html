@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.28">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Research – Julio Trecenti</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b719d3d4935f2b08311a76135e2bf442.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-80ed4b37935d44ec8cdf3eb177891bf7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0f595828481b9903856c37e1e56df463.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -173,6 +176,38 @@ details {
   margin-bottom: 0px;
 }
 </style>
+</div>
+<div class="card" style="padding:10px;margin-bottom:10px">
+<p><strong>Title:</strong> Gun Laws and Justifiable Homicides: Contrasting Impacts on Civilians and Police</p>
+<p><strong>Year:</strong> 2025</p>
+<p><strong>Type:</strong> published paper</p>
+<strong>Description:</strong>
+<details>
+<summary>
+Show
+</summary>
+We examine the association between right-to-carry (RTC) and stand-your-ground (SYG) laws and justifiable homicides by civilians and police, and discuss public policy implications.
+</details>
+<p><strong>Authors:</strong> Ivan Ribeiro, Julio Trecenti, Nelson Coelho, Jessica Maruyama, Abhay Aneja, John Donohue</p>
+<p><strong>Language:</strong> en-US</p>
+<p><strong>Institution:</strong> JELS</p>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/jels.70014" target="_blank"><strong>Link</strong></a></p>
+</div>
+<div class="card" style="padding:10px;margin-bottom:10px">
+<p><strong>Title:</strong> Selection Bias on Justifiable Homicides Reports</p>
+<p><strong>Year:</strong> 2025</p>
+<p><strong>Type:</strong> working paper</p>
+<strong>Description:</strong>
+<details>
+<summary>
+Show
+</summary>
+This study quantifies the structure of FBI’s Supplementary Homicide Report (SHR) reporting bias by comparing SHR incident counts to more comprehensive, crowdsourced databases-Fatal Encounters (FE) and Mapping Police Violence (MPV).
+</details>
+<p><strong>Authors:</strong> Julio Trecenti, Ivan Ribeiro</p>
+<p><strong>Language:</strong> en-US</p>
+<p><strong>Institution:</strong> SSRN</p>
+<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5378360" target="_blank"><strong>Link</strong></a></p>
 </div>
 <div class="card" style="padding:10px;margin-bottom:10px">
 <p><strong>Title:</strong> Impact evaluation of technical notes issued by NATJUS on healthcare judicialization</p>
@@ -716,13 +751,14 @@ Esse trabalho contribui para o desenvolvimento da jurimetria, uma disciplina do 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

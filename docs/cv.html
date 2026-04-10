@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.28">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Curriculum Vitae – Julio Trecenti</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b719d3d4935f2b08311a76135e2bf442.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-80ed4b37935d44ec8cdf3eb177891bf7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0f595828481b9903856c37e1e56df463.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -203,9 +206,9 @@ Faxineiro de dados. Doutor em Estatística pelo IME-USP. Professor Tempo Parcial
 <p>
 <strong>Copy</strong>:
 </p>
-<div id="cbpt-BR" class="sourceCode">
-<pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cbpt-BR-1"><a href="http://localhost:4017/cv.html#cbpt-BR-1" aria-hidden="true" tabindex="-1"></a>Faxineiro de dados. Doutor em Estatística pelo IME-USP. Professor Tempo Parcial no Insper. Pesquisador no CEOE/Unifesp. Diretor-Técnico da Associação Brasileira de Jurimetria (ABJ).Trabalha com raspagem de dados, arrumação de dados, inteligência artificial, processamento de linguagem natural, visualização de dados e dashboards.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div id="cbpt-BR" class="sourceCode">
+<pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cbpt-BR-1"><a href="http://localhost:4017/cv.html#cbpt-BR-1" aria-hidden="true" tabindex="-1"></a>Faxineiro de dados. Doutor em Estatística pelo IME-USP. Professor Tempo Parcial no Insper. Pesquisador no CEOE/Unifesp. Diretor-Técnico da Associação Brasileira de Jurimetria (ABJ).Trabalha com raspagem de dados, arrumação de dados, inteligência artificial, processamento de linguagem natural, visualização de dados e dashboards.</span></code></pre>
+</div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
 </div>
@@ -228,9 +231,9 @@ Data Janitor. PhD in Statistics at IME-USP. Part time professor at Insper. Resea
 <p>
 <strong>Copy</strong>:
 </p>
-<div id="cben-US" class="sourceCode">
-<pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cben-US-1"><a href="http://localhost:4017/cv.html#cben-US-1" aria-hidden="true" tabindex="-1"></a>Data Janitor. PhD in Statistics at IME-USP. Part time professor at Insper. Researcher at CEOE/Unifesp. Technical Director at the Brazilian Association of Jurimetrics (ABJ). Works with web scraping, data tidying, artificial intelligence, natural language processing, data visualization, and dashboards.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div id="cben-US" class="sourceCode">
+<pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cben-US-1"><a href="http://localhost:4017/cv.html#cben-US-1" aria-hidden="true" tabindex="-1"></a>Data Janitor. PhD in Statistics at IME-USP. Part time professor at Insper. Researcher at CEOE/Unifesp. Technical Director at the Brazilian Association of Jurimetrics (ABJ). Works with web scraping, data tidying, artificial intelligence, natural language processing, data visualization, and dashboards.</span></code></pre>
+</div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
 </div>
@@ -316,13 +319,14 @@ Data Janitor. PhD in Statistics at IME-USP. Part time professor at Insper. Resea
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
